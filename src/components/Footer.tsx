@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#A70038] text-[#FFFAFA] p-4 text-center mt-auto">
+    <footer className="bg-[#2B2B2B] text-[#FFFAFA] p-4 text-center mt-auto">
       © 2024 Pra Quem Faz. Todos os direitos reservados.
     </footer>
   );
