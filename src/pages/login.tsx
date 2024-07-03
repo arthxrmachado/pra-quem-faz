@@ -20,28 +20,28 @@ const Login = () => {
                     <form onSubmit={handleLoginSubmit} className="space-y-4">
                         <div className="relative flex flex-col">
                             <input 
-                                type="email" 
-                                id="loginEmail" 
-                                value={email} 
-                                onChange={(e) => setEmail(e.target.value)} 
-                                className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
-                                placeholder=""
+                            type="email" 
+                            id="loginEmail" 
+                            value={email} 
+                            onChange={(e) => setEmail(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
-                            <label htmlFor="loginEmail" className="absolute left-4 -top-2 text-sm text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-2 peer-focus:text-sm peer-focus:text-gray-500">E-mail</label>
+                            <label htmlFor="loginEmail" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">E-mail</label>
                         </div>
 
                         <div className="relative flex flex-col">
                             <input 
-                                type="password" 
-                                id="loginPassword" 
-                                value={password} 
-                                onChange={(e) => setPassword(e.target.value)} 
-                                className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
-                                placeholder=""
+                            type="password" 
+                            id="loginPassword" 
+                            value={password} 
+                            onChange={(e) => setPassword(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
-                            <label htmlFor="loginPassword" className="absolute left-4 -top-2 text-sm text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-focus:-top-2 peer-focus:text-sm peer-focus:text-gray-500">Senha</label>
+                            <label htmlFor="loginPassword" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Senha</label>
                         </div>
 
                         <div className="mt-3">

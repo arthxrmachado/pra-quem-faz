@@ -33,65 +33,69 @@ const Register = () => {
                     <h1 className="text-3xl text-center font-bold mb-5 ml-2">Cadastre-se</h1>
 
                     <form onSubmit={handleRegisterSubmit} className="space-y-4">
-                        {/* campos de cadastro */}
-                        <div className="flex flex-col">
-                            <label htmlFor="firstName" className="mb-1 ml-2">Nome</label>
+                        <div className="relative flex flex-col">
                             <input 
                                 type="text" 
                                 id="firstName" 
                                 value={firstName} 
                                 onChange={(e) => setFirstName(e.target.value)} 
-                                className="bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
+                                className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:border-transparent selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                                required
+                                placeholder=""
                             />
+                            <label htmlFor="firstName" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Nome</label>
                         </div>
 
-                        <div className="flex flex-col">
-                            <label htmlFor="lastName" className="mb-1 ml-2">Sobrenome</label>
+                        <div className="relative flex flex-col">
                             <input 
-                                type="text" 
-                                id="lastName" 
-                                value={lastName} 
-                                onChange={(e) => setLastName(e.target.value)} 
-                                className="bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
+                            type="text" 
+                            id="lastName" 
+                            value={lastName} 
+                            onChange={(e) => setLastName(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
+                            <label htmlFor="lastName" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Sobrenome</label>
                         </div>
 
-                        <div className="flex flex-col">
-                            <label htmlFor="email" className="mb-1 ml-2">E-mail</label>
+                        <div className="relative flex flex-col">
                             <input 
-                                type="email" 
-                                id="email" 
-                                value={email} 
-                                onChange={(e) => setEmail(e.target.value)} 
-                                className="bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
+                            type="email" 
+                            id="email" 
+                            value={email} 
+                            onChange={(e) => setEmail(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
+                            <label htmlFor="email" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">E-mail</label>
                         </div>
 
-                        <div className="flex flex-col">
-                            <label htmlFor="password" className="mb-1 ml-2">Senha</label>
+                        <div className="relative flex flex-col">
                             <input 
-                                type="password" 
-                                id="password" 
-                                value={password} 
-                                onChange={(e) => setPassword(e.target.value)} 
-                                className="bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
+                            type="password" 
+                            id="password" 
+                            value={password} 
+                            onChange={(e) => setPassword(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
+                            <label htmlFor="password" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Senha</label>
                         </div>
 
-                        <div className="flex flex-col">
-                            <label htmlFor="confirmPassword" className="mb-1 ml-2">Confirmar Senha</label>
+                        <div className="relative flex flex-col">
                             <input 
-                                type="password" 
-                                id="confirmPassword" 
-                                value={confirmPassword} 
-                                onChange={(e) => setConfirmPassword(e.target.value)} 
-                                className="bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring focus:border-blue-300" 
-                                required 
+                            type="password" 
+                            id="confirmPassword" 
+                            value={confirmPassword} 
+                            onChange={(e) => setConfirmPassword(e.target.value)} 
+                            className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                            required 
+                            placeholder=""
                             />
+                            <label htmlFor="confirmPassword" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Confirmar Senha</label>
                         </div>
 
                         <div className="flex items-center">
@@ -105,7 +109,6 @@ const Register = () => {
                             <label htmlFor="acceptTerms" className="text-sm">Eu aceito os termos e a política de privacidade</label>
                         </div>
 
-                        {/* ajustando o botão */}
                         <div className="flex justify-center">
                             <button 
                                 type="submit" 
