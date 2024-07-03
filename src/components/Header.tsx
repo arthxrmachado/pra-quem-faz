@@ -5,10 +5,10 @@ const Header = () => {
   return (
     <>
       <header className="bg-[#2B2B2B] p-4 text-[#FFFAFA] fixed top-0 w-full z-50 h-15 flex items-center justify-between md:justify-around">
-        <Link href="/">
+        <Link legacyBehavior href="/">
           <img src="../images/logo.png" alt="Logo" className="h-7 ml-4" />
         </Link>
-        <div className="hidden md:flex space-x-11">
+        <div className="hidden md:flex space-x-10">
           <h1 className="hover:text-[#FF0055]"><Link href="/">Descobrir</Link></h1>
           <h1 className="hover:text-[#FF0055]"><Link href="/">Explorar</Link></h1>
           <h1 className="hover:text-[#FF0055]"><Link href="/">Cursos</Link></h1>
