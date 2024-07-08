@@ -29,39 +29,34 @@ export default function Home() {
         <CarroselDestaque></CarroselDestaque>
       </div>
 
-      <div className="bg-gray-600 mt-6 mb-8 flex flex-wrap justify-center">
-        {cursosPresenciais.map((cursoPresencial) => (
-          <Card key={cursoPresencial} className="w-1/2 lg:w-1/4 p-5">
-            <CardHeader>
-              <CardTitle>Gerente de Marketing Digital</CardTitle>
-              <CardDescription>Categoria do curso</CardDescription>
-            </CardHeader>
-
-            <CardContent className="grid gap-4">
-              <div className="flex items-center space-x-4 rounded-md border p-4">
-                <p>div Imagem</p>
+      <section className="w-full h-full flex flex-col flex-wrap mb-[80px]  px-5 sm:px-0 sm:py-0">
+        <h3 className="text-[24px] text-center mt-[50px] pb-14 font-bold">
+          Conheça nossos cursos EAD
+        </h3>
+        <div className="grid grid-cols-2 gap-4 mx-[18px] sm:grid-cols-4">
+          {cursosPresenciais.map((cursoPresencial) => (
+            <Card
+              key={cursoPresencial}
+              className="bg-[rgb(60,60,60)] border border-transparent"
+            >
+              <div className="flex items-center m-[5px] h-[150px] rounded-md border p-4">
+                <p>Imagem minicurso</p>
               </div>
-              <div>
-                <div className="mb-4 grid grid-cols-[25px_1fr] items-start pb-4 last:mb-0 last:pb-0">
-                  <span className="flex h-2 w-2 translate-y-1 rounded-full bg-[red]"></span>
-                  <div className="space-y-1">
-                    <p className="text-sm font-medium leading-none">
-                      Descrição breve do curso elit. Cum eius officia dolorem
-                      quam? Perferendis distinctio ad culpa perspiciatis
-                      laudantium vero natus optio voluptatem. Magnam excepturi
-                      neque dolor aperiam, debitis deleniti.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
+              <CardHeader>
+                <CardTitle className="m-[-15px] text-[20px]">
+                  Gastronomia Francesa do seculo XXI
+                </CardTitle>
+              </CardHeader>
 
-            <CardFooter>
-              <Button className="w-full bg-red-600">Matricule-se!</Button>
-            </CardFooter>
-          </Card>
-        ))}
-      </div>
+              <CardFooter className="mb-[-10px] mt-[10px]">
+                <Button className="w-full bg-red-600 hover:bg-white hover:text-black hover:font-bold">
+                  Saiba Mais
+                </Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </section>
     </>
   );
 }
