@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Layout from '../app/layout';
 
 const Register = () => {
     // Definindo estados para os campos do formulário
@@ -26,7 +25,7 @@ const Register = () => {
     };
 
     return (
-        <Layout>
+        <>
             <title>Cadastre-se - Pra Quem Faz</title>
             <div className="min-h-screen flex items-center justify-center">
                 <div className="p-6 rounded-lg w-full max-w-md bg-[#2B2B2B] text-[#FFFFFF] shadow-md mt-24 mb-10 mx-10">
@@ -39,7 +38,7 @@ const Register = () => {
                                 id="firstName" 
                                 value={firstName} 
                                 onChange={(e) => setFirstName(e.target.value)} 
-                                className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:border-transparent selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
+                                className="peer bg-gray-200 text-gray-800 border rounded-lg px-4 py-2 focus:outline-none focus:ring selection:bg-[#A70038] selection:text-white focus:ring-[#A70038] focus:border-[#A70038]" 
                                 required
                                 placeholder=""
                             />
@@ -95,7 +94,7 @@ const Register = () => {
                             required 
                             placeholder=""
                             />
-                            <label htmlFor="confirmPassword" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Confirmar Senha</label>
+                            <label htmlFor="confirmPassword" className="absolute left-4 -top-0.3 text-xs text-gray-500 transition-all peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-valid:-top-0.3 peer-valid:text-xs peer-valid:text-gray-500 focus:ring-2 focus:ring-blue-300 focus:border-transparent">Confirmar senha</label>
                         </div>
 
                         <div className="flex items-center">
@@ -124,7 +123,7 @@ const Register = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     );
 };
 

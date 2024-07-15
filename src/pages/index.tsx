@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <div className="bg-black text-left pl-[5%] pr-[3%] mt-[90px] mb-8">
-        <p className=" text-white font-bold text-[270%] pb-5">
+        <p className="text-white font-bold text-[270%] pb-5">
           Faça o futuro acontecer!
         </p>
         <p className="text-gray-200 text-[140%]">
@@ -30,9 +30,10 @@ export default function Home() {
       </div>
 
       <section className="w-full h-full flex flex-col flex-wrap mb-[80px]  px-5 sm:px-0 sm:py-0">
-        <h3 className="text-[24px] text-center mt-[50px] pb-14 font-bold">
+        <p className="text-white text-[24px] text-center mt-[50px] pb-14 font-bold">
           Conheça nossos cursos EAD
-        </h3>
+        </p>
+
         <div className="grid grid-cols-2 gap-4 mx-[18px] sm:grid-cols-4">
           {cursosPresenciais.map((cursoPresencial) => (
             <Card

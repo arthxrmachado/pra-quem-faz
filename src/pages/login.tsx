@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import Layout from '../app/layout';
 
 const Login = () => {
     const [email, setEmail] = useState('');
@@ -11,7 +10,7 @@ const Login = () => {
     };
 
     return (
-        <Layout>
+        <>
             <title>Conecte-se - Pra Quem Faz</title>
             <div className="min-h-screen flex items-center justify-center">
                 <div className="p-6 rounded-lg w-full max-w-md bg-[#2B2B2B] text-[#FFFFFF] shadow-md mt-24 mb-10 mx-10">
@@ -71,7 +70,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
-        </Layout>
+        </>
     );
 };
 
